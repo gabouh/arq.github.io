@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arq list</title>
+    <style>
+        .timeline_list {
+  position: fixed;
+    z-index: 1;
+    width: 200px;
+    margin-left: 1000px;
+    list-style-type: none;
+    cursor: pointer;
+}
+.timeline_elements .element {
+  position: relative;
+    width: 960px;
+    margin-bottom: 20px;
+    background: gray;
+}
+.timeline_elements .activeSlider {
+  overflow: hidden;
+}
+.timeline_elements .slider {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    background: #eaeaea url(img/layout/loading.gif) center center no-repeat;
+}
+.timeline_elements .slider {
+  display: flex;
+}
+.timeline_elements .content {
+	padding: 30px;
+	border: 1px solid #eaeaea;
+	border-top: none;
+
+	-webkit-transition: padding 250ms ease-in-out;
+	-moz-transition: padding 250ms ease-in-out;
+	-ms-transition: padding 250ms ease-in-out;
+	-o-transition: padding 250ms ease-in-out;
+	transition: padding 250ms ease-in-out;
+
+	-webkit-box-shadow: 0 8px 0 -4px rgba(0, 0, 0, 0.02);
+	-moz-box-shadow: 0 8px 0 -4px rgba(0, 0, 0, 0.02);
+	box-shadow: 0 8px 0 -4px rgba(0, 0, 0, 0.02);
+}
+.timeline_list li a {
+  display: block;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 12px;
+	margin-bottom: 1px;
+	color: #999;
+	border-left: 4px solid #eaeaea;
+	
+	-webkit-transition: color 250ms, border 250ms;
+	-moz-transition: color 250ms, border 250ms;
+	-ms-transition: color 250ms, border 250ms;
+	-o-transition: color 250ms, border 250ms;
+	transition: color 250ms, border 250ms;
+
+}
+.timeline_list li .active {
+  color: #000;
+    border-color: #000;
+}
+    </style>
+</head>
+<body>
+  <!-- intersección de maquina de estados de semaforos -->
+    <div class="container">
+        <ul class="timeline_list">
+          <li>
+            <a class="active" href="#001-torre-avancer">001 Torre Avancer</a>
+          </li>
+          <li>
+            <a href="#002-edificio-turin" class="">002 Edificio Turín</a>
+          </li>
+          <li>
+            <a href="#003-casa-tejada">003 Casa Tejada</a>
+          </li>
+          <li>
+            <a href="#004-casa-guzman-jimenez" class="">004 Casa Guzmán Jiménez</a>
+          </li>
+          <li>
+            <a href="#005-kaybe" class="">005 KAYBE</a>
+          </li>
+      
+        </ul>
+        <div class="timeline_elements">
+          <div class="element 001-torre-avancer">
+            <div class="slider activeSlider" style="background-image: none;">
+              <ul class="slider" style="width: 834%; transform: translateX(-1%); transition: all 500ms ease-in-out 0s;">
+                <li class="slide-0 circle">
+                    <a href="">
+                      <img src="casa_tejeda/01_Casa_Tejada_EMParquitectos_Guadalajara-400x600.jpg" alt="">
+                    </a>
+                </li>
+                <li class="slide-0 circle">
+                    <a href="">
+                      <img src="casa_tejeda/02_Casa_Tejada_EMParquitectos_Guadalajara-800x600.jpg" alt="">
+                    </a>
+                </li>
+                <li class="slide-0 circle">
+                    <a href="">
+                      <img src="casa_tejeda/03_Casa_Tejada_EMParquitectos_Guadalajara-400x600.jpg" alt="">
+                    </a>
+                </li>
+                <li class="slide-0 circle">
+                    <a href="">
+                      <img src="casa_tejeda/04_Casa_Tejada_EMParquitectos_Guadalajara-400x600.jpg" alt="">
+                    </a>
+                </li>
+                <li class="slide-0 circle">
+                    <a href="">
+                      <img src="casa_tejeda/05_Casa_Tejada_EMParquitectos_Guadalajara-800x600.jpg" alt="">
+                    </a>
+                </li>
+                <li class="slide-0 circle">
+                    <a href="">
+                      <img src="casa_tejeda/06_Casa_Tejada_EMParquitectos_Guadalajara-1200x600.jpg" alt="">
+                    </a>
+                </li>
+                <li class="slide-0 circle">
+                    <a href="">
+                      <img src="casa_tejeda/07_Casa_Tejada_EMParquitectos_Guadalajara-400x600.jpg" alt="">
+                    </a>
+                </li>
+                <li class="slide-0 circle">
+                    <a href="">
+                      <img src="casa_tejeda/08_Casa_Tejada_EMParquitectos_Guadalajara-400x600.jpg" alt="">
+                    </a>
+                </li>
+                <li class="slide-0 circle">
+                    <a href="">
+                      <img src="casa_tejeda/09_Casa_Tejada_EMParquitectos_Guadalajara-800x600.jpg" alt="">
+                    </a>
+                </li>
+                <li class="slide-0 circle">
+                    <a href="">
+                      <img src="casa_tejeda/10_Casa_Tejada_EMParquitectos_Guadalajara-800x600.jpg" alt="">
+                    </a>
+                </li>
+                <li class="slide-0 circle">
+                    <a href="">
+                      <img src="casa_tejeda/11_Casa_Tejada_EMParquitectos_Guadalajara-400x600.jpg" alt="">
+                    </a>
+                </li>
+                <li class="slide-0 circle">
+                    <a href="">
+                      <img src="casa_tejeda/12_Casa_Tejada_EMParquitectos_Guadalajara-400x600.jpg" alt="">
+                    </a>
+                </li>
+                <li class="slide-0 circle">
+                    <a href="">
+                      <img src="casa_tejeda/13_Casa_Tejada_EMParquitectos_Guadalajara-400x600.jpg" alt="">
+                    </a>
+                </li>
+                <li class="slide-0 circle">
+                    <a href="">
+                      <img src="casa_tejeda/14_Casa_Tejada_EMParquitectos_Guadalajara-400x600.jpg" alt="">
+                    </a>
+                </li>
+      
+              </ul>
+            </div>
+            <div class="content">
+              <ul class="sliderControls" style="opacity: 1;">
+                
+              </ul>
+              <h1><a href="http://emparquitectos.com/timeline/edificio-avancer/">TORRE AVANCER</a></h1>
+              <p>Oficinas para Renta</p>
+              <p>San Luis Potosí, México</p>
+              <p>2017-2021</p>
+              <p class="break"></p>
+              <p>Colaboración: Manuel Cervantes | Manuel Cervantes Estudio</p>
+              <p>Fotografía: Rafael Gamo Studio, César Béjar Studio</p>
+              <p class="break"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        function loaded () { 
+          var ul = document.querySelector('.timeline_list'); // Parent
+
+          ul.addEventListener('click', function (e) {
+              e.preventDefault();
+              var target = e.target; // Clicked element
+              while (target && target.parentNode !== ul) {
+                  target = target.parentNode; // If the clicked element isn't a direct child
+                  if(!target) { return; } // If element doesn't exist
+              }
+              if (target.tagName === 'LI'){
+                  // console.log(target.children[0]); // Check if the element is a LI        
+                  const active = document.querySelector('.active');
+                  if(active){
+                    active.classList.remove('active');
+                  }
+                  target.children[0].classList.toggle('active');
+                  console.log(target.children[0].classList);
+              }
+          });
+        }
+        window.onload = loaded;
+      </script>
+</body>
+</html>
