@@ -469,7 +469,8 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  background-attachment: fixed; }
+  /* background-attachment: fixed; */
+}
   .site-blocks-cover.overlay {
     position: relative; }
     .site-blocks-cover.overlay:before {
